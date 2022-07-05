@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8 - học lập trình để đi làm! | Học lập trình online | Học lập trình Javascript</title>
+      <!-- https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="#">
+                <img src="./assets/img/logo-f8.png"></img>
+            </a>
+            <h4>Học lập trình để đi làm</h4>
+        </div>
+        <div class="header-search">
+            <div class="search-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm khóa học và bai viết video,..."/>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="search-resrult">
+                <div class="search-no-content">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span id="search-no"></span>
+                </div>
+                <div class="list-result">
+                    <div class="result-sourses">
+                        <h3>Khóa học</h3>
+                        <a href="#">Xem thêm</a>
+                      </div>
+                      <div class="list-course-result">
+                        <img src="assets/img/account.png" alt="">
+                        <a href="#">Javascript</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-coures">
+                <h4>Khoá học của tôi</h4>
+                <div class="my-sources">
+                    <div class="sources-top">
+                        <h4>Khóa học của tôi</h4>
+                        <button>Xem tất cả</button>
+                    </div>
+                    <div class="sources-list">
+                        <div class="sources-item">
+                            <a href="#">
+                                <img src="./assets/img/html-css.png"/>
+                            </a>
+                            <div class="sources-content">
+                                <a href="#">HTML, CSS từ Zero đến Hero</a>
+                                <p>Học cách đây 6 ngày trước</p>
+                                <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                                    <tr style="height:8px;">
+                                        <td style="width:41%;background-color:red; border-bottom-left-radius: 8px; border-top-left-radius: 8px;padding: 4px 0px;"></td>
+                                        <td style="width:59%;background-color: #ccc; border-bottom-right-radius: 8px; border-top-right-radius: 8px; padding: 4px 0px;"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="sources-item">
+                            <a href="#">
+                                <img src="./assets/img/course.png"/>
+                            </a>
+                            <div class="sources-content">
+                                <a href="#">Responsive với Grid System</a>
+                                <p>Học cách đây một ngày trước</p>
+                                <table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                                    <tr style="height:8px;">
+                                        <td style="width:10%;background-color:red; border-bottom-left-radius: 8px; border-top-left-radius: 8px;padding: 4px 0px;"></td>
+                                        <td style="width:90%;background-color: #ccc; border-bottom-right-radius: 8px; border-top-right-radius: 8px; padding: 4px 0px;"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="sources-item">
+                            <a href="#">
+                                <img src="./assets/img/js.png"/>
+                            </a>
+                            <div class="sources-content">
+                                <a href="#">Lập Trình JavaScipt Cơ bản</a>
+                                <p>Bạn chưa học khóa học này</p>
+                                <a href="#">Bắt đầu học</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-noti">
+                <i class="fa-solid fa-bell"></i>
+                <div class="list-noti">
+                    <div class="header-menu-noti">
+                        <h4>Thông báo</h4>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="list-content-noti">
+                        <img src="./assets/img/logo-f8.png"/>
+                        <div class="content-noti">
+                            <div class="content-noti-letter">
+                                Chào mừng bạn đã gia nhập F8. Hãy luôn đam mê, kiên trì và theo đuổi mục tiên đến cùng bạn nhé
+                            </div>
+                            <div class="time-noti">
+                                2 tháng trước
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account-menu">
+                <img src="./assets/img/image-vandia.png"/>
+                <ul class="list-menu-account">
+                    <div class="user-menu-user">
+                        <img src="./assets/img/image-vandia.png"/>
+                        <div class="details-noti">
+                        <div class="user-name">
+                            Nguyễn Văn Dìa
+                        </div>
+                        <div class="username-lowercase">
+                            @nguyenvandia
+                        </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <li>
+                        <a href="#">Trang cá nhân</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#">Viết block</a>
+                        <a href="#">Bài viết của tui</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#">Bài viết đã lưu</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#">Cài đặt</a>
+                        <a href="#">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>

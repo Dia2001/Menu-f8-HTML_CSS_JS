@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16;
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 30px;
+    border-bottom: 1px solid #ccc;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left img{
+    height: 38px;
+    width: 38px;
+    border-radius: 6px;
+}
+.header-left h4{
+    margin-left: 16px;
+    line-height: 42px;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-search .search-input{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding:10px 16px ;
+    display: flex;
+    width: 420px;
+}
+.header-search .search-resrult{
+    position: absolute;
+    top: 110%;
+    padding:10px 16px ;
+    background-color: white;
+    box-shadow: 1px 1px 8px 8px #ededed;
+    border-radius: 8px;
+    width: 420px;
+    color: #0000008A;
+    display: none;
+}
+.search-resrult .search-no-content >span{
+    margin-left: 9px;
+}
+.header-search input{
+    border: none;
+    outline: none;
+    flex: 1; 
+    margin-left: 9px;
+}
+.search-input input::placeholder{
+    color: #ccc;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right .header-coures{
+
+position: relative;
+}
+.header-right i{
+    line-height: 42px;
+}
+.header-right .account-menu >img{
+    width: 28px;
+    height: 28px;
+    border-radius: 100px ;
+    margin-left: 10px;
+    position: relative;
+}
+.header-right i{
+    margin-right: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.header-right i:hover{
+    opacity: 0.9;
+}
+.header-right h4{
+    margin-right: 25px;
+}
+.header-right i {
+    margin-left: 10px;
+}
+/*  */
+.header-coures .my-sources{
+   position: absolute;
+   width: 375px;
+   right: 0;
+   padding: 8px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 1px 1px 8px 8px #ededed;
+   margin-right: 25px;
+   top:calc(100% + 18px);
+   display: none;
+}
+.header-coures .my-sources .sources-top{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 5px;
+    align-items: center;
+}
+.my-sources .sources-top button{
+    border: none;
+    color: #f05123;
+    padding:2px 6px;
+    background-color:#fff;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.my-sources .sources-top button:hover{
+    background-color: #f1f1f1;
+}
+.header-coures >h4{
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.sources-list .sources-item{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.sources-list >.sources-item:hover{
+    background-color:rgba(22,24,35,.05);
+    border-radius: 10px;
+}
+.sources-list .sources-item img{
+    width: 120px;
+    height: 67px;
+}
+.sources-list .sources-item .sources-content{
+    flex: 1;
+    padding: 15px 8px;
+}
+.sources-item .sources-content a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;  
+    font-size: 14px;
+}
+.sources-item .sources-content a:last-child{
+    color: #f05123;
+} 
+.active{
+    display: block !important;
+}
+.header-noti .fa-solid{
+    position: relative;
+}
+.header-noti .list-noti{
+    position: absolute;
+    right: 0;
+    margin-right: 79px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 8px #ededed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 350px;
+    display: none;
+}
+.header-noti .list-noti .header-menu-noti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-noti .list-content-noti img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+}
+.header-noti .list-content-noti{
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-noti .list-content-noti:hover{
+    background-color: rgba(22,24,35,.05);
+}
+.list-content-noti .content-noti{
+    padding: 8px;
+}
+.list-content-noti .content-noti .time-noti{
+    color: #f05123;
+}
+.content-noti .content-noti-letter{
+    color: #333333;
+}
+.account-menu .list-menu-account{
+    position:absolute;
+    right: 0;
+    margin-right: 27px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 8px #ededed;
+    padding: 5px;
+    border-radius: 10px;
+    width: 230px;
+}
+.list-menu-account .user-menu-user>img{
+    width: 50px;
+    height: 50x;
+    border-radius: 100px;
+}
+.account-menu .list-menu-account .user-menu-user{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+} 
+.list-menu-account  .user-menu-user .details-noti{
+    padding: 2px 8px;
+    flex: 1;
+}
+.list-menu-account  .user-menu-user .user-name{
+    font-weight: bold;
+}
+.list-menu-account  .user-menu-user .username-lowercase{
+    color: #757575;
+}
+.account-menu .list-menu-account hr{
+    margin: 8px 0px;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.05);
+}
+.account-menu .list-menu-account {
+    list-style: none;
+    padding: 15px;
+    display: none;
+}
+.account-menu .list-menu-account a{
+    display: block;
+    text-decoration: none;
+    color: #666666;
+    padding: 10px 0px;
+    font-size: 17px;
+}
+.search-input i:last-child{
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    font-weight: bold;
+    display: none;
+}
+.search-input i:last-child:hover{
+    opacity: 0.9;
+}
+.list-result .list-course-result img{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.list-result{
+    padding: 12px 5px;
+    font-size: 14px;
+}
+.list-result .result-sourses{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.list-result .result-sourses h3{
+    padding:8px 0px;
+}
+.list-result .result-sourses a{
+  text-decoration: none;
+  color: #0000008A;
+  padding:8px 0px;
+}
+.list-result .list-course-result{
+    padding:9px 0px;
+    display: flex;
+    align-items: center;
+}
+.list-result .list-course-result a{
+    padding: 10px;
+    text-decoration: none;
+    color: #292929;
+}
+
